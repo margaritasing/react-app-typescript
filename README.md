@@ -1,1 +1,1 @@
-# Práctica de React con Tyṕescript
+# Práctica de React con Typescript
