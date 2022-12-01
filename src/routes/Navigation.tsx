@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom"
 import logo from '../logo.svg'
 
 
@@ -9,7 +9,18 @@ export const Navigation = () => {
         <div className="main-layout">
             <nav>
                 <img src={logo} alt="react-logo" />            
-            </nav>        
+            </nav>
+            <ul>
+                <li>
+                     <NavLink to="/">Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/about">About</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/users">User</NavLink>
+                </li>           
+            </ul>        
         </div>   
      </BrowserRouter>    
     </>
